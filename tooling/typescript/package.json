@@ -1,0 +1,8 @@
+{
+  "name": "@utopian-tours/tsconfig",
+  "private": true,
+  "version": "0.1.0",
+  "files": [
+    "base.json"
+  ]
+}

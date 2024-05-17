@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;500&family=Inter:wght@300;400;600&display=swap&family=Work+Sans:wght@400;600');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    @apply bg-white leading-100 text-16;
+}
+
+.g-container {
+    @apply max-w-screen-lg mx-auto px-4 w-full;
+
+}
+
+.g-container-recessed {
+    @apply max-w-screen-lg mx-auto px-6;
+}
+
+.g-container-md {
+    @apply max-w-screen-sm px-4 mx-auto;
+}
+
+@media screen(lg) {
+    .g-container, .g-container-recessed {
+        @apply max-w-screen-2xl
+    }
+}

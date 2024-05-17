@@ -1,0 +1,49 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "publish": "NITRO_PRESET=cloudflare npm run build && wrangler deploy",
+    "getTexts": "node getTexts.js"
+  },
+  "dependencies": {
+    "@tanstack/vue-query": "^5.8.1",
+    "@trpc/client": "^10.43.1",
+    "@trpc/server": "^10.43.1",
+    "@utopian-tours/api": "^0.1.0",
+    "axios": "^1.6.3",
+    "sass": "^1.62.1",
+    "swiper": "^11.0.5",
+    "vue-markdown-render": "^2.1.1",
+    "wrangler": "^3.22.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@utopian-tours/eslint-config": "^0.2.0",
+    "@utopian-tours/prettier-config": "^0.1.0",
+    "@utopian-tours/tailwind-config": "^0.1.0",
+    "@utopian-tours/tsconfig": "^0.1.0",
+    "eslint": "^8.53.0",
+    "nuxt": "^3.8.1",
+    "prettier": "^3.0.3",
+    "tailwindcss": "3.3.5",
+    "typescript": "^5.2.2",
+    "vue": "^3.3.8",
+    "vue-router": "^4.2.5"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@utopian-tours/eslint-config/base",
+      "@utopian-tours/eslint-config/nextjs",
+      "@utopian-tours/eslint-config/react"
+    ]
+  },
+  "prettier": "@utopian-tours/prettier-config"
+}

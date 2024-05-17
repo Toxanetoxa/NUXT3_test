@@ -1,0 +1,5 @@
+name = "utopian-tours-api"
+main = "index.ts"
+compatibility_date = "2022-11-07"
+node_compat = true
+workers_dev = true

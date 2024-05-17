@@ -1,0 +1,44 @@
+{
+  "seoTitle": "Utopian tours",
+  "seoDescription": null,
+  "createdAt": "2023-12-31T05:24:35.871Z",
+  "updatedAt": "2023-12-31T05:32:29.680Z",
+  "publishedAt": "2023-12-31T05:24:37.633Z",
+  "textBlock2Title": "Booking and payment",
+  "firstBlock": {
+    "id": 1,
+    "title": "Individual trips at the highest degree of comfort ",
+    "content": "With decades of experience throughout Russia, Utopian Tours provides you with a wide range of exceptional travel experiences. Our team is happy to connect you with the trip of your dreams. Here’s how we make your trip better."
+  },
+  "leftPanel": {
+    "id": 1,
+    "title": "Take a tour",
+    "description": "Quality escapes lasting a few hours to a day",
+    "cta": "Find a tour ",
+    "url": "/catalog?type=tours"
+  },
+  "rightPanel": {
+    "id": 2,
+    "title": "Go on an expedition",
+    "description": "Customised adventures for a few days away from the usual",
+    "cta": "Find an expedition",
+    "url": "/catalog?type=expeditions"
+  },
+  "textBlock2Elements": [
+    {
+      "id": 1,
+      "icons": "whatsapp",
+      "text": "Order an experience via WhatsApp"
+    },
+    {
+      "id": 2,
+      "icons": "profile",
+      "text": "Your personal manager will answer  any questions and clarify all details"
+    },
+    {
+      "id": 3,
+      "icons": "secure",
+      "text": "Payment is transfered through Sberbank"
+    }
+  ]
+}

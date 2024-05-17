@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Utopian Tours</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lavishly+Yours&display=swap"
+          rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <style>* {
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        background-color: #190C29;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .scrim {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(180deg, rgba(25, 12, 41, 0.00) 0%, rgba(25, 12, 41, 0.61) 49.85%, #190C29 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("background.png"), url("background-placeholder.png");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .background {
+            background-image: url("background-sm.png"), url("background-placeholder.png");
+        }
+    }
+
+    .container {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        color: white
+    }
+
+    .content {
+        z-index: 3;
+        position: relative;
+        text-align: center;
+    }
+
+    html, body, iframe {
+        border-radius: 0 !important;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-family: 'Inter', sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: .8px;
+        text-transform: uppercase;
+    }
+
+    .subtitle {
+        font-family: "Lavishly Yours", cursive;
+        font-size: 42px;
+        line-height: .8;
+        opacity: .8;
+    }
+
+    #demo {
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin: 48px 0 0px;
+        font-size: 28px;
+    }
+
+    #demo span {
+        letter-spacing: 1.4px;
+    }
+
+    .launch-date {
+        font-size: 12px;
+    }
+
+    .contact a {
+        display: inline-block;
+        margin: 64px 0 0 ;
+        text-decoration: none;
+        color: inherit;
+
+    }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="scrim">
+    </div>
+    <div class="background"></div>
+    <div class="content">
+        <img src="logo.svg" width="96" height="96" class="logo" alt="utopian logo"/>
+        <h1 class="title">Utopian Tours</h1>
+        <p class="subtitle">unforgettable experiences</p>
+        <p id="demo">22h</p>
+        <p class="launch-date">Launching on 13.11.2023</p>
+
+        <div class="contact">
+            <a href="mailto:contact@utopiantours.com">contact@utopiantours.com</a>
+        </div>
+    </div>
+
+</div>
+
+<script>
+  const countDownDate = new Date("Nov 13, 2023 13:13:13").getTime()
+  const fn = () => {
+
+    // Get today's date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 48)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Display the result in the element with id="demo"
+    document.getElementById("demo").innerHTML = `<span>${hours}</span>h <span>${minutes}</span>m <span>${seconds}</span>s`
+
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "";
+    }
+  }
+  const x = setInterval(fn, 1000)
+  fn()
+
+
+</script>
+</body>
+</html>

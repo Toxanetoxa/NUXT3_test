@@ -1,0 +1,15 @@
+{
+  "id": 1,
+  "attributes": {
+    "defaultSeoTitle": "Utopian Tours",
+    "defaultSeoDescription": null,
+    "phoneNumber": "+7 995 885-64-44",
+    "BookingTilte": null,
+    "BookingCTA": null,
+    "createdAt": "2023-12-31T05:24:45.684Z",
+    "updatedAt": "2023-12-31T10:59:21.855Z",
+    "publishedAt": "2023-12-31T05:24:47.539Z",
+    "CancelationPolicy": null,
+    "BookingItems": []
+  }
+}
